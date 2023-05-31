@@ -1,0 +1,18 @@
+{% extends 'main.html' %} {% block content %}
+
+<main class="page">
+  <section class="recipes-container">
+    <div class="recipes-list">
+      {% for picture in pictures %}
+      <div class="recipe">
+        <img class="recipe-img" src="{{picture.image}}" />
+        <figcaption>
+          <h5>{{picture.name}}</h5>
+        </figcaption>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</main>
+
+{% endblock content %}
