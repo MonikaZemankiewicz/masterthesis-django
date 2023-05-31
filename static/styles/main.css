@@ -632,6 +632,7 @@ form > *:last-child {
   vertical-align: top;
   max-width: 100%;
   backface-visibility: hidden;
+  object-fit: cover;
 }
 
 .recipe figcaption {
@@ -679,7 +680,9 @@ form > *:last-child {
     grid-template-columns: 1fr 1fr;
   }
   .recipe-img {
-    height: 10rem;
+    max-height: 10rem;
+    min-width: 100%;
+    object-fit: cover;
   }
 }
 

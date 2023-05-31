@@ -5,7 +5,7 @@
     <div class="recipes-list">
       {% for picture in pictures %}
       <div class="recipe">
-        <img class="recipe-img" src="{{picture.image}}" />
+        <img class="recipe-img" src="{{picture.image.url}}" />
         <figcaption>
           <h5>{{picture.name}}</h5>
         </figcaption>

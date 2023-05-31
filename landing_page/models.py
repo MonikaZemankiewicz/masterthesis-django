@@ -3,7 +3,7 @@ from django.db import models
 
 class Picture(models.Model):
     name = models.CharField(max_length=200)
-    image = models.ImageField(upload_to='images', default='images/1.jpg')
+    image = models.ImageField(default='1.jpg')
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
 
