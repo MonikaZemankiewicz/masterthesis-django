@@ -1,11 +1,11 @@
-{% extends 'main.html' %} {% block content %}
+{% extends 'main.html' %} {% block content %} {% load static %}
 
 <main class="page">
   <section class="recipes-container">
     <div class="recipes-list">
       {% for picture in pictures %}
       <div class="recipe">
-        <img class="recipe-img" src="{{picture.image.url}}" />
+        <img class="recipe-img" src="{% static picture.image.url %}" />
         <figcaption>
           <h5>{{picture.name}}</h5>
         </figcaption>
