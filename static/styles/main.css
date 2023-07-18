@@ -631,6 +631,7 @@ form > *:last-child {
 .recipe-img {
   vertical-align: top;
   max-width: 100%;
+  width: 100%;
   backface-visibility: hidden;
   object-fit: cover;
 }
